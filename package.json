@@ -6,6 +6,22 @@
     "types": "dist/index.d.ts",
     "author": "Mehmet Tetik",
     "license": "MIT",
+    "keywords": [
+        "react-component",
+        "react",
+        "nextjs",
+        "jupyter",
+        "jupyter-notebook",
+        "jupyter-notebook-viewer",
+        "jupyter-notebook-viewer-react",
+        "jupyter-notebook-viewer-react-component",
+        "jupyter-notebook-viewer-react-component-nextjs"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mtetik98/react-jupyter-notebook-viewer.git"
+    },
+    "homepage": "https://github.com/mtetik98/react-jupyter-notebook-viewer",
     "dependencies": {
         "@tailwindcss/postcss7-compat": "^2.0.3",
         "postcss-loader": "4.3.0",
