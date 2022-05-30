@@ -31,12 +31,12 @@ npm install react-jupyter-notebook-viewer
 
 ```js
 // App.js
-import  {  JupyterNotebookViewer  }  from  "react-jupyter-notebook-viewer";
+import { JupyterNotebookViewer } from "react-jupyter-notebook-viewer";
 
 export default function App() {
 	return (
 		<JupyterNotebookViewer
-			filePath"/path/to/notebook" // Or a raw JSON notebook file location online
+			filePath="/path/to/notebook" // Or a raw JSON notebook file location online
 			notebookInputLanguage="python"
 			// Rest of the properties if required.
 		/>
@@ -46,7 +46,7 @@ export default function App() {
 
 ### NextJS Applications
 
-> **⚠️ DISCLAIMER**  
+> **⚠️ DISCLAIMER**
 > Using this package in a NextJS application requires a different approach.
 
 1. Create a component using the package inside the ``/components/Notebook.js`` file:
@@ -76,7 +76,7 @@ const Notebook = dynamic(() => import("../components/Notebook"), {
 export default function IndexPage() {
 	return (
 		<Notebook
-			filePath"/path/to/notebook" // Or a raw JSON notebook file location online
+			filePath="/path/to/notebook" // Or a raw JSON notebook file location online
 			notebookInputLanguage="python"
 			// Rest of the properties if required.
 		/>
