@@ -10,6 +10,9 @@
 ![React](https://img.shields.io/npm/dependency-version/react-jupyter-notebook-viewer/react)
 [![React Markdown](https://img.shields.io/npm/dependency-version/react-jupyter-notebook-viewer/react-markdown)](https://www.npmjs.com/package/react-markdown)
 [![React Syntax Highlighter](https://img.shields.io/npm/dependency-version/react-jupyter-notebook-viewer/react-syntax-highlighter)](https://www.npmjs.com/package/react-syntax-highlighter)
+
+---
+
 Render Jupyter notebook files easily in your React/NextJS project to showcase your notebooks.
 
 React Jupyter Notebook Viewer is a **highly customizable static** viewer for React. Therefore this package will **never ever** be transformed into an interactive Jupyter Notebook viewer.
