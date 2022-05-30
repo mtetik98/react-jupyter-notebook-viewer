@@ -95,7 +95,7 @@ export default function IndexPage() {
 | filePath                    | The path to the Jupyter notebook file (.ipynb)                                                                               | ✔️        | string  | -                      |
 | className                   | The class name of the static viewer                                                                                          | ❌        | string  | -                      |
 | notebookInputLanguage       | The Jupyter notebook input code language                                                                                     | ❌        | string  | -                      |
-| notebookOutputLanguage      | The Jupyter notebook output code language                                                                                    | ❌        | string  | `notebookInputLanguage |  | notebookOutputLanguage` |
+| notebookOutputLanguage      | The Jupyter notebook output code language                                                                                    | ❌        | string  | `notebookOutputLanguage OR notebookInputLanguage` |
 | outputTextClassName         | The Jupyter notebook output block execution number class name                                                                | ❌        | string  | -                      |
 | inputTextClassName          | The Jupyter notebook input block execution number class name                                                                 | ❌        | string  | -                      |
 | outputBlockClassName        | The Jupyter notebook output block class name                                                                                 | ❌        | string  | -                      |
@@ -133,3 +133,7 @@ I've mainly focused on the code block part and not the **markdown** part and thi
 - [NextJS Demo](https://codesandbox.io/s/nextjs-example-react-jupyter-notebook-viewer-lzjcb5)
 - [NPM Package](https://www.npmjs.com/package/react-jupyter-notebook-viewer)
 - [Source code](https://github.com/mtetik98/react-jupyter-notebook-viewer)
+- [React Syntax Highlighter](https://www.npmjs.com/package/react-syntax-highlighter)
+- [React Markdown](https://www.npmjs.com/package/react-markdown)
+- [Remark Plugins](https://github.com/remarkjs/remark/blob/main/doc/plugins.md#list-of-plugins)
+- [Rehype Plugins](https://github.com/rehypejs/rehype/blob/main/doc/plugins.md#list-of-plugins)
