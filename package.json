@@ -4,7 +4,11 @@
     "main": "dist/index.js",
     "src": "lib/index.js",
     "types": "dist/index.d.ts",
-    "author": "Mehmet Tetik",
+    "author": {
+        "name": "Mehmet Tetik",
+        "email": "mehmet1998tetik@hotmail.com",
+        "url": "htpps://mehmettetik.nl"
+    },
     "license": "MIT",
     "keywords": [
         "react-component",
