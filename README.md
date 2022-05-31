@@ -1,6 +1,7 @@
+# React Jupyter Notebook Viewer
+
 <img src="https://raw.githubusercontent.com/mtetik98/react-jupyter-notebook-viewer/main/static/logo.webp" align="right" width="200" />
 
-# React Jupyter Notebook Viewer
 [![Version](https://img.shields.io/npm/v/react-jupyter-notebook-viewer?style=flat-square)](https://www.npmjs.com/package/react-jupyter-notebook-viewer)
 [![Bundle Size](https://img.shields.io/bundlephobia/min/react-jupyter-notebook-viewer?style=flat-square)](https://www.npmjs.com/package/react-jupyter-notebook-viewer)
 [![Total Downloads](https://img.shields.io/npm/dm/react-jupyter-notebook-viewer?style=flat-square)](https://www.npmjs.com/package/react-jupyter-notebook-viewer)
@@ -10,6 +11,7 @@
 ![React](https://img.shields.io/npm/dependency-version/react-jupyter-notebook-viewer/react)
 [![React Markdown](https://img.shields.io/npm/dependency-version/react-jupyter-notebook-viewer/react-markdown)](https://www.npmjs.com/package/react-markdown)
 [![React Syntax Highlighter](https://img.shields.io/npm/dependency-version/react-jupyter-notebook-viewer/react-syntax-highlighter)](https://www.npmjs.com/package/react-syntax-highlighter)
+[![Buy Coffee](https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?logo=buy-me-a-coffee)](https://www.buymeacoffee.com/mtetik98)
 
 ---
 
