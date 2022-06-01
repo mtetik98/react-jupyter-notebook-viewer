@@ -1,10 +1,11 @@
 const webpack = require("webpack");
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    mode: "production",
+    mode: "development",
     entry: {
-        app: path.join(__dirname, "src", "index.tsx"),
+        app: path.join(__dirname, "demo", "index.tsx"),
     },
     resolve: {
         extensions: [".js", ".jsx", ".ts", ".tsx"],
@@ -17,8 +18,7 @@ module.exports = {
                 exclude: "/node_modules/",
             },
             {
-                test: /\.css$/i,
-                include: path.resolve(__dirname, "src"),
+                test: /\.css$/,
                 use: ["style-loader", "css-loader", "postcss-loader"],
             },
         ],
@@ -31,11 +31,11 @@ module.exports = {
         publicPath: "/",
     },
     plugins: [
+        new HtmlWebpackPlugin({
+            template: path.join(__dirname, "demo", "index.html"),
+        }),
         new webpack.ProvidePlugin({
             process: "process/browser.js",
         }),
     ],
-    externals: {
-        react: "react",
-    },
 };

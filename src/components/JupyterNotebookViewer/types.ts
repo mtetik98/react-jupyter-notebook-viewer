@@ -1,4 +1,4 @@
-export declare type JupyterNotebookViewerType = {
+export type JupyterNotebookViewerType = {
     filePath: string;
     className?: string;
     notebookInputLanguage?: string;
@@ -21,83 +21,102 @@ export declare type JupyterNotebookViewerType = {
     inputMarkdownBlockClassName?: string;
     inputCodeBlockClassName?: string;
     hideCodeBlocks?: boolean;
+    hideMarkdownBlocks?: boolean;
     hideAllOutputs?: boolean;
     hideAllInputs?: boolean;
     remarkPlugins?: any;
     rehypePlugins?: any;
 };
-export declare type NotebookTransformed = {
+
+export type NotebookTransformed = {
     type: string;
     executionCount: number;
     source: string;
     outputs?: Array<NotebookOutputTransformed>;
 };
-export declare type NotebookOutputTransformed = {
+
+export type NotebookOutputTransformed = {
     outputType: string;
     data?: Data | string[];
 };
-export declare type NotebookPartType = {
+
+export type NotebookPartType = {
     type: string;
     executionCount: number | undefined;
     source: string;
     outputs?: NotebookOutputTransformed[];
 };
-export declare type Notebook = {
+
+export type Notebook = {
     cells: Cell[];
     metadata: NotebookMetadata;
     nbformat: number;
     nbformat_minor: number;
 };
-export declare type Cell = {
+
+export type Cell = {
     cell_type: CellType;
     metadata: CellMetadata;
     source: string[];
     execution_count?: number;
     outputs?: Output[];
 };
-export declare enum CellType {
+
+export enum CellType {
     Code = "code",
-    Markdown = "markdown"
+    Markdown = "markdown",
 }
-export declare type CellMetadata = {};
-export declare type Output = {
+
+export type CellMetadata = {};
+
+export type Output = {
     data?: Data;
     execution_count?: number;
     metadata?: OutputMetadata;
     output_type: OutputType;
     name?: string;
     text?: string[];
+    traceback?: string[];
 };
-export declare type Data = {
+
+export type Data = {
     "text/html"?: string[];
     "text/plain": string[];
     "image/png"?: string;
 };
-export declare type OutputMetadata = {
+
+export type OutputMetadata = {
     needs_background?: NeedsBackground;
 };
-export declare enum NeedsBackground {
-    Light = "light"
+
+export enum NeedsBackground {
+    Light = "light",
 }
-export declare enum OutputType {
+
+export enum OutputType {
     DisplayData = "display_data",
     ExecuteResult = "execute_result",
-    Stream = "stream"
+    Stream = "stream",
+    Error = "error",
 }
-export declare type NotebookMetadata = {
+
+export type NotebookMetadata = {
     interpreter: Interpreter;
     kernelspec: Kernelspec;
     language_info: LanguageInfo;
     orig_nbformat: number;
 };
-export declare type Interpreter = {
+
+export type Interpreter = {
     hash: string;
 };
-export declare type Kernelspec = {
+
+export type Kernelspec = {
     display_name: string;
     name: string;
 };
-export declare type LanguageInfo = {
+
+export type LanguageInfo = {
     codemirror_mode: CodemirrorMode;
     file_extension: string;
     mimetype: string;
@@ -106,7 +125,8 @@ export declare type LanguageInfo = {
     pygments_lexer: string;
     version: string;
 };
-export declare type CodemirrorMode = {
+
+export type CodemirrorMode = {
     name: string;
     version: number;
 };

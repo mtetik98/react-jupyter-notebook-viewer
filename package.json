@@ -1,9 +1,12 @@
 {
     "name": "react-jupyter-notebook-viewer",
     "version": "1.1.8",
-    "main": "dist/index.js",
-    "src": "lib/index.js",
-    "types": "dist/index.d.ts",
+    "description": "Highly customizable React component for rendering Jupyter Notebooks",
+    "scripts": {
+        "start": "webpack-dev-server --mode development --config ./webpack.config.js",
+        "build": "npm run clean && webpack --mode production --config ./webpack.build.js",
+        "clean": "rimraf dist"
+    },
     "author": {
         "name": "Mehmet Tetik",
         "email": "mehmet1998tetik@hotmail.com",
@@ -26,35 +29,37 @@
         "url": "https://github.com/mtetik98/react-jupyter-notebook-viewer.git"
     },
     "homepage": "https://github.com/mtetik98/react-jupyter-notebook-viewer",
-    "dependencies": {
-        "@tailwindcss/postcss7-compat": "^2.0.3",
-        "postcss-loader": "4.3.0",
-        "react": "^18.1.0",
-        "react-dom": "^18.1.0",
-        "react-markdown": "^8.0.3",
-        "react-syntax-highlighter": "^15.5.0",
-        "remark-gfm": "^3.0.1"
-    },
     "devDependencies": {
         "@types/react": "^18.0.9",
         "@types/react-dom": "^18.0.5",
         "@types/react-syntax-highlighter": "^15.5.1",
+        "@types/webpack": "^5.28.0",
         "autoprefixer": "^10.4.7",
-        "css-loader": "^5.0.2",
-        "path": "^0.12.7",
+        "html-webpack-plugin": "^5.5.0",
         "postcss": "^8.4.14",
-        "style-loader": "^2.0.0",
+        "process": "^0.11.10",
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0",
+        "react-icons": "^4.4.0",
+        "react-scripts": "^5.0.1",
+        "rehype-katex": "^6.0.2",
+        "remark-math": "^5.1.1",
         "tailwindcss": "^3.0.24",
-        "ts-loader": "^8.0.17",
-        "typescript": "^4.1.5",
+        "ts-loader": "^9.3.0",
+        "typescript": "^4.7.2",
         "webpack": "^5.72.1",
+        "webpack-bundle-analyzer": "^4.5.0",
         "webpack-cli": "^4.9.2"
     },
-    "scripts": {
-        "start": "npm link && npm link ../testapp/node_modules/react",
-        "build": "webpack --mode=production --config webpack.build.js"
+    "dependencies": {
+        "react-markdown": "^8.0.3",
+        "react-syntax-highlighter": "^15.5.0",
+        "remark-gfm": "^3.0.1"
     },
     "files": [
         "./dist"
-    ]
+    ],
+    "src": "src/index.tsx",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts"
 }

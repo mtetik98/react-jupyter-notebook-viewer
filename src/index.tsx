@@ -1,2 +1,3 @@
-import "./styles.css";
+import "./index.css";
+
 export * from "./components/JupyterNotebookViewer";
