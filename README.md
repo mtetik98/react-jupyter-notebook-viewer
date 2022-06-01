@@ -8,7 +8,6 @@
 [![License](https://img.shields.io/npm/l/react-jupyter-notebook-viewer)](https://github.com/mtetik98/react-jupyter-notebook-viewer/blob/main/LICENSE)
 ![Type](https://img.shields.io/npm/types/react-jupyter-notebook-viewer)
 ![Used by](https://img.shields.io/sourcegraph/rrc/react-jupyter-notebook-viewer)
-![React](https://img.shields.io/npm/dependency-version/react-jupyter-notebook-viewer/react)
 [![React Markdown](https://img.shields.io/npm/dependency-version/react-jupyter-notebook-viewer/react-markdown)](https://www.npmjs.com/package/react-markdown)
 [![React Syntax Highlighter](https://img.shields.io/npm/dependency-version/react-jupyter-notebook-viewer/react-syntax-highlighter)](https://www.npmjs.com/package/react-syntax-highlighter)
 [![Buy Coffee](https://img.shields.io/badge/-buy_me_a%C2%A0coffee-gray?logo=buy-me-a-coffee)](https://www.buymeacoffee.com/mtetik98)
