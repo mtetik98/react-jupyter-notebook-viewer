@@ -51,6 +51,7 @@ export default function App() {
 ### NextJS Applications
 
 > **⚠️ DISCLAIMER**
+> 
 > Using this package in a NextJS application requires a different approach.
 
 1. Create a component using the package inside the ``/components/Notebook.js`` file:
@@ -96,7 +97,7 @@ export default function IndexPage() {
 | filePath                    | The path to the Jupyter notebook file (.ipynb)                                                                               | ✔️        | string  | -                      |
 | className                   | The class name of the static viewer                                                                                          | ❌        | string  | -                      |
 | notebookInputLanguage       | The Jupyter notebook input code language                                                                                     | ❌        | string  | -                      |
-| notebookOutputLanguage      | The Jupyter notebook output code language                                                                                    | ❌        | string  | `notebookOutputLanguage OR notebookInputLanguage` |
+| notebookOutputLanguage      | The Jupyter notebook output code language                                                                                    | ❌        | string  | ``notebookOutputLanguage \|\| notebookInputLanguage`` |
 | outputTextClassName         | The Jupyter notebook output block execution number class name                                                                | ❌        | string  | -                      |
 | inputTextClassName          | The Jupyter notebook input block execution number class name                                                                 | ❌        | string  | -                      |
 | outputBlockClassName        | The Jupyter notebook output block class name                                                                                 | ❌        | string  | -                      |
